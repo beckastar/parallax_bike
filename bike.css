@@ -158,33 +158,33 @@
     transform-origin: bottom left;
 }
 #spoke_eleven{
-    bottom: 134px;
-    left: 159px;
-    transform: rotate(111deg);
+    bottom: 159px;
+    right: 131px;
+    transform: rotate(23deg);
     transform-origin: bottom left;
 }
 #spoke_twelve{
-    bottom: 140px;
-    left: 0px;
-    transform: rotate(90deg);
-    transform-origin: bottom left;
+    bottom: 91px;
+    left: 6px;
+    transform: rotate(70deg);
+    transform-origin: bottom right;
 }
 #spoke_thirteen{
-    bottom: 140px;
-    left: 0px;
-    transform: rotate(90deg);
+    top: 12px;
+    right: 120px;
+    transform: rotate(70deg);
     transform-origin: bottom left;
 }
 #spoke_fourteen{
-    bottom: 140px;
-    left: 0px;
-    transform: rotate(90deg);
+    top: 26px;
+    right: 119px;
+    transform: rotate(110deg);
     transform-origin: bottom left;
 }
 #spoke_fifteen{
-    bottom: 140px;
-    left: 0px;
-    transform: rotate(90deg);
+    bottom: 270px;
+    left: 87px;
+    transform: rotate(157deg);
     transform-origin: bottom left;
 }
 #spoke_sixteen{
