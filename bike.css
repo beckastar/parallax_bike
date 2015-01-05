@@ -188,15 +188,15 @@
     transform-origin: bottom left;
 }
 #spoke_sixteen{
-    bottom: 140px;
+    bottom: 12px;
     left: 0px;
     transform: rotate(90deg);
     transform-origin: bottom left;
 }
 #spoke_seventeen{
-    bottom: 140px;
-    left: 0px;
-    transform: rotate(90deg);
+    bottom: 12px;
+    left: 84px;
+    transform: rotate(23deg);
     transform-origin: bottom left;
 }
 #spoke_eighteen{
