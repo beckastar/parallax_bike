@@ -1,3 +1,25 @@
+/*fender*/
+#fender{
+    width: 300px;
+    height: 300px;
+    background: red;
+    border-radius:300px;
+    background: blue;
+    display: inline-block;
+    z-index: 10;
+}
+#frame_bar{
+    width: 300px;
+    height: 12px;
+    background: red;
+    left: 10px;
+    position: relative;
+}
+#frame{
+    float: right;
+}
+
+/*rim*/
 .outer_circle{
     width: 300px;
     height: 300px;
@@ -5,9 +27,8 @@
     border-radius:300px;
     display: inline-block;
     z-index: 6;
-
 }
-
+/*contains spokes*/
 .inner_circle{
     width: 280px;
     height: 280px;
@@ -16,23 +37,23 @@
     border: 6px solid gray;
     display: inline-block;
     z-index: 7;
-/*    -webkit-animation-name: spin;
-    -webkit-animation-duration: 4000ms;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 2000ms;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: spin;
-    -moz-animation-duration: 4000ms;
+    -moz-animation-duration: 2000ms;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
     -ms-animation-name: spin;
-    -ms-animation-duration: 4000ms;
+    -ms-animation-duration: 2000ms;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
 
     animation-name: spin;
-    animation-duration: 4000ms;
+    animation-duration: 2000ms;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;*/
+    animation-timing-function: linear;
 }
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }
@@ -54,7 +75,7 @@
         transform:rotate(360deg);
     }
 }
-
+/*all spokes*/
 .spokes{
     width: 1px;
     height: 120px;
@@ -63,6 +84,7 @@
     display: inline-block;
     position: absolute;
 }
+/*front spokes are wider*/
 .front_spoke{
     display: inline-block;
     position: absolute;
@@ -71,20 +93,22 @@
     height: 120px;
     z-index: 9;
 }
+/*rear spokes are darker and thinner*/
 .rear_spoke{
     z-index: 8;
     background: #757475;
     width: 1px;
-    height: 120px;
+    height: 130px;
     background: #A6A6A6;
     border-radius: 300px;
     display: inline-block;
     position: absolute;
 }
+/*where spokes connects*/
 #spoke_hub{
     width: 40px;
     height: 40px;
-    background: black;
+    background: gray;
     border-radius: 300px;
     display: inline-block;
     position: absolute;
@@ -92,15 +116,27 @@
     top: 120px;
     left: 120px;
 }
-
+/*where frame sits on wheels*/
+#inner_spoke_hub{
+    width:10px;
+    height:10px;
+    background: white;
+    border-radius: 300px;
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+}
+/*container for everything and tire*/
 #wheel_outer{
     margin-left: 40px;
     margin-top: 404x;
 }
-
+/*rim*/
 #wheel_inner{
     top: 12px;
-    left: 52px;
+    left: 12px;
     position: absolute;
 }
 #spoke_one{
@@ -118,9 +154,9 @@
 
 }
 #spoke_four{
-    top: -55px;
+/*    top: -55px;
     right: -1168px;
-    transform: rotate(90deg); transform-origin: bottom left;
+    transform: rotate(90deg); transform-origin: bottom left;*/
 }
 #spoke_five{
     bottom: 44px;
@@ -187,12 +223,7 @@
     transform: rotate(157deg);
     transform-origin: bottom left;
 }
-#spoke_sixteen{
-    bottom: 12px;
-    left: 0px;
-    transform: rotate(90deg);
-    transform-origin: bottom left;
-}
+
 #spoke_seventeen{
     bottom: 12px;
     left: 84px;
@@ -205,6 +236,110 @@
     transform: rotate(158deg);
     transform-origin: bottom left;
 }
+/*end front spokes*/
+#spoke_nineteen{
+    bottom: 121px;
+    right: 131px;
+    transform: rotate(199deg);
+    transform-origin: bottom left;
+}
+#spoke_twenty{
+    bottom: 131px;
+    right: 122px;
+    transform: rotate(174deg);
+    transform-origin: bottom left;
+}
+#spoke_twentyone{
+    bottom: 150px;
+    right: 124px;
+    transform: rotate(150deg);
+    transform-origin: bottom left;
+}
+#spoke_twentytwo{
+    bottom: 155px;
+    right: 128px;
+    transform: rotate(127deg);
+    transform-origin: bottom left;
+}
+#spoke_twentythree{
+    bottom: 155px;
+    right: 125px;
+    transform: rotate(107deg);
+    transform-origin: bottom left;
+}
+#spoke_twentyfour{
+    bottom: 159px;
+    right: 131px;
+    transform: rotate(87deg);
+    transform-origin: bottom left;
+}
+#spoke_twentyfive{
+    bottom: 163px;
+    right: 137px;
+    transform: rotate(67deg);
+    transform-origin: bottom left;
+}
+#spoke_twentysix{
+    bottom: 154px;
+    right: 154px;
+    transform: rotate(47deg);
+    transform-origin: bottom left;
+}
+#spoke_twentysix{
+    bottom: 159px;
+    right: 144px;
+    transform: rotate(40deg);
+    transform-origin: bottom left;
+}
+#spoke_twentyseven{
+    bottom: 147px;
+    right: 155px;
+    transform: rotate(18deg);
+    transform-origin: bottom left;
+}
+#spoke_twentyeight{
+    bottom: 278px;
+    right: 163px;
+    transform: rotate(177deg);
+    transform-origin: bottom left;
+}
+#spoke_twentynine{
+    bottom: 250px;
+    right: 198px;
+    transform: rotate(161deg);
+    transform-origin: bottom left;
+}
+#spoke_thirty{
+    bottom: 213px;
+    right: 246px;
+    transform: rotate(133deg);
+    transform-origin: bottom left;
+}
+#spoke_thirtyone{
+    bottom: 109px;
+    right: 272px;
+    transform: rotate(83deg);
+    transform-origin: bottom left;
+}
+#spoke_thirtytwo{
+    bottom: 155px;
+    right: 275px;
+    transform: rotate(102deg);
+    transform-origin: bottom left;
+}
+#spoke_thirtythree{
+    bottom: 76px;
+    right: 257px;
+    transform: rotate(65deg);
+    transform-origin: bottom left;
+}
+#spoke_thirtyfour{
+    bottom: 35px;
+    right: 222px;
+    transform: rotate(42deg);
+    transform-origin: bottom left;
+}
+
 
 
 
